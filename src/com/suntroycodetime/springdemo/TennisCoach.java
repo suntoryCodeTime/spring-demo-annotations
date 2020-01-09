@@ -6,8 +6,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	/* When Autowired used above the variable it is using reflection for Field Injection */
+	@Autowired
 	private FortuneService fortuneService;
 	
+	/* Constructor Injection*/
 //	@Autowired
 //	public TennisCoach(FortuneService fortuneService) {
 //		this.fortuneService = fortuneService;
@@ -18,10 +21,11 @@ public class TennisCoach implements Coach {
 		System.out.println(">> In TennisCoach Default Constructor");
 	}
 	
-	@Autowired
-	public void setFortuneService(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
+	/* Setter Injection*/
+//	@Autowired
+//	public void setFortuneService(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
 	
 	@Override
 	public String getDailyWorkout() {
