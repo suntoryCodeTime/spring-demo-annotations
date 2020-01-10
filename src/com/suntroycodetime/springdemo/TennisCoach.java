@@ -14,7 +14,8 @@ public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */
 	@Autowired
-	@Qualifier("randomFortuneService")
+	//@Qualifier("randomFortuneService")
+	@Qualifier("fileFortuneService")
 	private FortuneService fortuneService;
 	
 	/* Constructor Injection*/
