@@ -1,6 +1,12 @@
+/*
+ * Note, Spring Injection Type Superiority is Debatable and it is MORE IMPORTANT to be CONSISTENT
+ * with your coding style.
+ * */
+
 package com.suntroycodetime.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,6 +14,7 @@ public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */
 	@Autowired
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 	
 	/* Constructor Injection*/
