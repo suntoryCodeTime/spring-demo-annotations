@@ -7,9 +7,11 @@ package com.suntroycodetime.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")		//Prototype scope means that a new instance is created everytime
 public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */

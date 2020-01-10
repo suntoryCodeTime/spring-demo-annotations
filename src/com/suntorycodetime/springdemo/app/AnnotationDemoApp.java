@@ -1,6 +1,8 @@
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.app;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.suntroycodetime.springdemo.Coach;
 
 public class AnnotationDemoApp {
 
