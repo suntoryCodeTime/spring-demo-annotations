@@ -1,9 +1,9 @@
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.services;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class DatabaseFortuneService implements FortuneService {
+public class RESTFortuneService implements FortuneService {
 
 	@Override
 	public String getFortune() {

@@ -1,4 +1,4 @@
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.services;
 
 import org.springframework.stereotype.Component;
 

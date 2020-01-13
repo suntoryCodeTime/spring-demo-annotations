@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import com.suntorycodetime.springdemo.services.FortuneService;
+
 @Component
 //@Scope("prototype")		//Prototype scope means that a new instance is created everytime
 public class TennisCoach implements Coach {
