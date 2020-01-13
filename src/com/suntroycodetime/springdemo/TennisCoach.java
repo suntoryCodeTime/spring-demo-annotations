@@ -5,13 +5,16 @@
 
 package com.suntroycodetime.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")		//Prototype scope means that a new instance is created everytime
+//@Scope("prototype")		//Prototype scope means that a new instance is created everytime
 public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */
@@ -29,6 +32,16 @@ public class TennisCoach implements Coach {
 	public TennisCoach() {
 		super();
 		System.out.println(">> In TennisCoach Default Constructor");
+	}
+	
+	@PostConstruct	
+	public void doStartUp() {
+		System.out.println(">> Tennis Coach: Inside Startup Method");
+	}
+	
+	@PreDestroy
+	public void doCleanUp() {
+		System.out.println(">> Tennis Coach: Inside Cleanup Method");
 	}
 	
 	/* Setter Injection*/
