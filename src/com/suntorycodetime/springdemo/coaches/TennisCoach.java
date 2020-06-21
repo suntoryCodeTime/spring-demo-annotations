@@ -3,7 +3,7 @@
  * with your coding style.
  * */
 
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.coaches;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -13,7 +13,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import com.suntorycodetime.springdemo.services.FortuneService;
+import com.suntorycodetime.springdemo.Coach;
+import com.suntorycodetime.springdemo.FortuneService;
 
 @Component
 //@Scope("prototype")		//Prototype scope means that a new instance is created everytime
@@ -21,8 +22,7 @@ public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */
 	@Autowired
-	//@Qualifier("randomFortuneService")
-	@Qualifier("fileFortuneService")
+	@Qualifier("happyFortuneService")
 	private FortuneService fortuneService;
 	
 	/* Constructor Injection*/

@@ -1,13 +1,13 @@
-package com.suntroycodetime.springdemo.config;
+package com.suntorycodetime.springdemo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
+import com.suntorycodetime.springdemo.FortuneService;
+import com.suntorycodetime.springdemo.coaches.ActivityCoach;
+import com.suntorycodetime.springdemo.Coach;
 import com.suntorycodetime.springdemo.services.ActivityFortuneService;
-import com.suntorycodetime.springdemo.services.FortuneService;
-import com.suntroycodetime.springdemo.ActivityCoach;
-import com.suntroycodetime.springdemo.Coach;
 
 @Configuration
 @PropertySource("classpath:activity.properties")

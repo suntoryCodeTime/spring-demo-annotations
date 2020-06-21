@@ -1,12 +1,12 @@
-package com.suntroycodetime.springdemo.config;
+package com.suntorycodetime.springdemo.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import com.suntorycodetime.springdemo.services.FortuneService;
+import com.suntorycodetime.springdemo.FortuneService;
+import com.suntorycodetime.springdemo.coaches.SwimCoach;
+import com.suntorycodetime.springdemo.Coach;
 import com.suntorycodetime.springdemo.services.SadFortuneService;
-import com.suntroycodetime.springdemo.Coach;
-import com.suntroycodetime.springdemo.SwimCoach;
 
 @Configuration
 //@ComponentScan("com.suntroycodetime.springdemo")

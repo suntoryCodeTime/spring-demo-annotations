@@ -1,6 +1,7 @@
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.coaches;
 
 import org.springframework.stereotype.Component;
+import com.suntorycodetime.springdemo.Coach;
 
 @Component
 public class SoccerCoach implements Coach {

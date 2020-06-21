@@ -2,8 +2,8 @@ package com.suntorycodetime.springdemo.app;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.suntroycodetime.springdemo.ActivityCoach;
-import com.suntroycodetime.springdemo.config.ActivityConfig;
+import com.suntorycodetime.springdemo.coaches.ActivityCoach;
+import com.suntorycodetime.springdemo.config.ActivityConfig;
 
 public class ActivityJavaConfigDemoApp {
 

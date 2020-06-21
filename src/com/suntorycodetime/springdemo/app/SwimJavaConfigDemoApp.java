@@ -2,8 +2,8 @@ package com.suntorycodetime.springdemo.app;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.suntroycodetime.springdemo.SwimCoach;
-import com.suntroycodetime.springdemo.config.SportConfig;
+import com.suntorycodetime.springdemo.coaches.SwimCoach;
+import com.suntorycodetime.springdemo.config.SportConfig;
 
 public class SwimJavaConfigDemoApp {
 

@@ -11,6 +11,8 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.stereotype.Component;
 
+import com.suntorycodetime.springdemo.FortuneService;
+
 
 
 @Component

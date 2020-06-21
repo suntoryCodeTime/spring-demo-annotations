@@ -1,8 +1,9 @@
-package com.suntroycodetime.springdemo;
+package com.suntorycodetime.springdemo.coaches;
 
 import org.springframework.beans.factory.annotation.Value;
 
-import com.suntorycodetime.springdemo.services.FortuneService;
+import com.suntorycodetime.springdemo.FortuneService;
+import com.suntorycodetime.springdemo.Coach;
 
 public class SwimCoach implements Coach {
 

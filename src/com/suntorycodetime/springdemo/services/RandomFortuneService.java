@@ -4,6 +4,8 @@ import java.util.Random;
 
 import org.springframework.stereotype.Component;
 
+import com.suntorycodetime.springdemo.FortuneService;
+
 @Component
 public class RandomFortuneService implements FortuneService {
 
