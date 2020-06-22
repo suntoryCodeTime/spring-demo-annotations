@@ -21,8 +21,9 @@ import com.suntorycodetime.springdemo.FortuneService;
 public class TennisCoach implements Coach {
 	
 	/* When Autowired used above the variable it is using reflection for Field Injection */
-	@Autowired
-	@Qualifier("happyFortuneService")
+	//@Autowired
+	//@Qualifier("happyFortuneService")
+	//@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 	
 	/* Constructor Injection*/
@@ -31,10 +32,16 @@ public class TennisCoach implements Coach {
 //		this.fortuneService = fortuneService;
 //	}
 	
-	public TennisCoach() {
-		super();
-		System.out.println(">> In TennisCoach Default Constructor");
+	/*Constructor Injection with @Qualifier annotation*/
+	@Autowired
+	public TennisCoach(@Qualifier("fileFortuneService") FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
 	}
+	
+//	public TennisCoach() {
+//		super();
+//		System.out.println(">> In TennisCoach Default Constructor");
+//	}
 	
 	@PostConstruct	
 	public void doStartUp() {
