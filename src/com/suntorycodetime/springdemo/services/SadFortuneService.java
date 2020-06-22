@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import com.suntorycodetime.springdemo.FortuneService;
 
-@Component
+//@Component
 public class SadFortuneService implements FortuneService {
 
 	@Override

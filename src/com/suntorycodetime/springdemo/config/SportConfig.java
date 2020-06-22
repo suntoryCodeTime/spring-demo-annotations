@@ -1,5 +1,6 @@
 package com.suntorycodetime.springdemo.config;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
@@ -9,8 +10,7 @@ import com.suntorycodetime.springdemo.Coach;
 import com.suntorycodetime.springdemo.services.SadFortuneService;
 
 @Configuration
-//@ComponentScan("com.suntroycodetime.springdemo")
-
+//@ComponentScan("com.suntorycodetime.springdemo.coaches, com.suntorycodetime.springdemo.services")
 @PropertySource("classpath:sport.properties")
 public class SportConfig {
 	// define bean for our sad fortune service
