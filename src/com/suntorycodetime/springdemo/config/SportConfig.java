@@ -10,7 +10,7 @@ import com.suntorycodetime.springdemo.Coach;
 import com.suntorycodetime.springdemo.services.SadFortuneService;
 
 @Configuration
-//@ComponentScan("com.suntorycodetime.springdemo.coaches, com.suntorycodetime.springdemo.services")
+@ComponentScan("com.suntorycodetime.springdemo.coaches, com.suntorycodetime.springdemo.services")
 @PropertySource("classpath:sport.properties")
 public class SportConfig {
 	// define bean for our sad fortune service
